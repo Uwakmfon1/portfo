@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="height:100px;width:100px;background:red;"></div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo praesentium temporibus. Voluptates possimus optio quos quia iusto quibusdam accusamus quaerat delectus nulla incidunt. Tempore laudantium quasi harum! Porro.</p>
+
+    <script>
+        const box = document.querySelector(".box");
+        const rect = box.getBoundingClientRect();
+        console.log(rect);
+        window.addEventListener('scroll', reveal)
+        function reveal(){
+            console.log(window.innerHeight);
+            if(box.getBoundingClientRect().top < window.innerHeight){
+                box.style.background = "blue";
+            }
+        }
+        container.addEventListener('scroll', reveal)
+        function reveal(){
+            const reveal = document.querySelector(".reveal");
+            let windowHeight = window.innerHeight;
+            for(let i=0;i<reveal.length;i++){
+                let revealHeight = reveal[i].getBoundingClientRect().top;
+                let revealTop = 2;
+
+                if(revealHeight <(windowHeight-revealTop)){
+                    container.classList.add('reveal')
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .reveal{
+            position: relative;
+            transform: translateY(150px);
+            transition: 0.3s ease-in-out;
+    }
+    </style>
+</body>
+</html>

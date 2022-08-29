@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <form action="">
+        <input type="text" id="input1">
+        <button type="button" onclick="dash()">submit</button>
+    </form>
+    
+    
+            <h3>This is where you will select the user</h3>
+            <select name="" id="select">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+                <option value="5">E</option>
+                <option value="6">F</option>
+                <option value="7">G</option>
+                <option value="8">H</option>
+                <option value="9">I</option>
+                <option value="10">J</option>
+            </select>
+            <input type="text" id="display" placeholder="name">
+            <input type="text" id="display2" placeholder="email">
+            <!-- <button onclick="fetching()">Submit</button> -->
+
+
+            <select name="" id="lang" onChange="update()">
+                <option value="en">English</option>
+                <option value="yb">yoruba</option>
+                <option value="ig">igbo</option>
+                <option value="ha">hausa</option>
+            </select>
+            <input type="text" id="language_symbol">
+            <!-- <input type="text" id=""> -->
+
+ 
+
+            <div class="container"></div>
+
+
+            <p id="p">selectedIndex: 0</p>
+            <select name="" id="help">
+                <option value="" selected>A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+                <option value="">D</option>
+                <option value="">E</option>
+            </select>
+
+            <script>
+                const selectElem = document.getElementById("help");
+                const pElem = document.getElementById("p");
+
+                select.addEventListener("change", ()=>{
+                    const index = selectElem.selectedIndex;
+                    pElem.textContent = `selectedIndex: ${index}`;
+                })
+            </script>
+    <script src="app.js"></script>
+</body>
+</html>

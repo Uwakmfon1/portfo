@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Desert",
+        "id":1,
+        "occupation":"web developer",
+        "description":"unseriously looking at what you do",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuD-LHXeZAN4pyQRIiooPl037Q9LGlI-F9A&usqp=CAU",
+        "price":30
+    },
+ 
+    {
+        "name":"Egg bucaneer",
+        "id":2,
+        "occupation":"graphics designer",
+        "description":"good favorite",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2xxWXD-fUGYcHtgMGnFHVC0sL6gAEo0QKQ&usqp=CAU",
+        "price":34
+    },
+    
+    {
+        "name":"Barbecue",
+        "id":3,
+        "occupation":"content writer",
+        "description":"i write more than i talk",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnuD-LHXeZAN4pyQRIiooPl037Q9LGlI-F9A&usqp=CAU",
+        "price":27
+    },
+
+    {
+        
+        "name":"Fruit salad",
+        "id":4,
+        "occupation":"photographer",
+        "description":"bringing technology in harmony with nature",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJQkcBu0ItNIMldCBFF7LVBRKTNDDkOTDeQ&usqp=CAU",
+        "price":35
+    }
+]

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scroll.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <h1>Reveal Elements on scroll</h1>
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Your Title </h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Your Title </h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.</p> -->
+                         <img src="./img/t_background1.jfif" alt="">
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container reveal">
+            <h2>Your Title </h2>
+            <div class="cards">
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+                <div class="text-cards">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid, excepturi sequi saepe molestias obcaecati illum beatae expedita, quibusdam dolore, adipisci quos perspiciatis rem eligendi
+                         voluptatibus necessitatibus.  optio dolor error esse qui quidem.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<p class="sas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium ipsa doloremque distinctio reiciendis libero tempore iusto. Vero ullam temporibus animi minus corrupti eius itaque numquam adipisci soluta recusandae? Dolore!</p>
+
+
+    <script type="text/javascript">
+        
+        window.addEventListener('scroll', reveal) 
+        function reveal(){
+            const reveals = document.querySelectorAll('.reveal')
+            for(let i = 0; i<reveals.length;i++){
+                let windowHeight = window.innerHeight
+                
+                let revealTop = reveals[i].getBoundingClientRect().top;
+                console.log(revealTop);
+                let revealPoint = 150;
+
+                if(revealTop < (windowHeight-revealPoint)){
+                    reveals[i].classList.add('active');
+                }
+                // else{
+                    // reveals[i].classlist.remove('active')
+                // }
+            }
+        }
+        
+
+    </script>
+    
+</body>
+</html>

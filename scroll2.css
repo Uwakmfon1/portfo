@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    animation: moves 3s alternate;
+}
+
+.container .item2 img{
+ height: 50vh;   
+ width: 50vh;
+
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 3s ease-in;
+}
+.reveal.active{
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* 
+@keyframes moves{
+    from{top:200px;
+    opacity: -3;}
+    to{top: 0px;
+    opacity: 1;}
+} */

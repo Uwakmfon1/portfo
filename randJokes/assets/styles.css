@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+main {
+  background: #fff;
+  margin: 15rem;
+  padding: 2rem;
+  border: 2px solid red;
+  width: 70%;
+}
+
+main h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+main #clicked {
+  margin-top: 2em;
+  width: 140px;
+  height: 40px;
+  background: #a9a9d6;
+}
+
+main #clicked:hover {
+  background: burlywood;
+}
+/*# sourceMappingURL=styles.css.map */

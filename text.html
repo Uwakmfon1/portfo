@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="val">
+    <button type="button" id="button">submit</button>
+    <ul id="ul">
+
+    </ul>
+    <script>
+console.log(window.innerHeight);
+console.log(window.innerWidth);
+const button = document.getElementById("button")
+    button.addEventListener('click',()=>{
+        const val = document.getElementById("val");
+        const ul = document.getElementById("ul")
+        const li = document.createElement("li")
+        li.innerHTML = val.value
+         
+        console.log(val.value)
+        ul.appendChild(li);
+    })
+    
+    </script>
+</body>
+</html>
+
